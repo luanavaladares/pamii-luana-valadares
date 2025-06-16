@@ -1,30 +1,30 @@
 import React from "react";
-import {View, StyleSheet } from "react-native";   
-import BotaoProps from './components/BotoaProps'
+import { View, StyleSheet } from "react-native";
+import BotaoProps from './components/BotaoProps';
 
-const App =()=>{
-const handlePress =()=>{
-  console.log('Botão Pressinado!');
+const App = () => {
+  const handlePress = () => {
+  console.log('Botão pressionado!');
 };
 
-const Teste =()=>{
-  console.log('segundo Teste');
+const teste = () => {
+  console.log('Segundo teste');
 };
 
-return (
-  <View style={style.container}>
-    <BotaoProps label='clique aqui' corFundo="blue" onPress={handlePress}/>
-    <BotaoProps label='clique agora' corFundo="purple" onPress={Teste}/>
-  </View>
-   );
-  };
+  return (
+    <View style={styles.container}>
+      <BotaoProps label="Clique aqui" corFundo="green" onPress={handlePress} />
+      <BotaoProps label="Clique agora" corFundo="pink" onPress={handlePress} />
+    </View>
+  );
+};
 
-  const style =StyleSheet.create({
-    container: {
-      flex: 10,
-      justifyContent: 'center',
-      alignItems: 'center',
-    
-    },
-  });
-  export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: "center",
+  }
+});
+
+export default App;
