@@ -25,5 +25,5 @@ function saudacao(nome: string): string {
     nomes.forEach(nome => console.log(nome));
   }
   
-  listarNomes(['Ana', 'Bruno', 'Carlos']);
+  listarNomes(['Alice', 'Bianca', 'Camila']);
   

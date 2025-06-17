@@ -5,9 +5,9 @@ let estaAtivo: boolean = true;
 
 //Arrays
 let numeros: number[] = [1, 2, 3, 4, 5];
-let nomes: string[] = ['Ana', 'Bruno', 'Carlos'];
-let misto: (string | number)[] = ['Ana', 25, 'Carlos', 30];
-let misto2: Array<string | number> = ['Ana', 25, 'Carlos', 30];
+let nomes: string[] = ['Alice', 'Bianca', 'Camila'];
+let misto: (string | number)[] = ['Alice', 25, 'Camila', 30];
+let misto2: Array<string | number> = ['Alice', 25, 'Camila', 30];
 
 //Tuplas
 let pessoa: [string, number] = ['Maria', 30];
@@ -25,6 +25,6 @@ interface Usuario {
 
 //Utilizar elas fica assim:
 let novo_usuario: Usuario = {
-    nome: 'Amanda',
+    nome: 'Alice',
     idade: 18
 };
